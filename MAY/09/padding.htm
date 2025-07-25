@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .border{
+            border: 1px solid black;
+        }
+        .p1{
+            padding: 20px;
+        }
+        .p2{
+            padding: 20px 0px;
+        }
+        .p3{
+            padding: 0px 30px;
+        }
+        .p-up{
+            padding-top: 30px;
+        }
+
+    </style>
+</head>
+<body>
+        <h1 class="border p-up">This is a H with padding up</h1>
+        <h1 class="border">This is a H without padding</h1>
+        <br>
+        <div class="border p1">This is a div with all 4 padding</div>
+        <br>
+        <!--Padding overlaps with near by inline elements-->
+        <span class="border p2">SPAN 1 Some random text</span>
+        <!-- <p>Test block</p> -->
+        <span class="border">SPAN 2 </span>
+
+        <br>
+        <span class="border p3 p2">SPAN 3</span>
+        <span class="border ">SPAN 4</span>
+
+        <br>
+        <span class="border p2">SPAN 5</span>
+        <span class="border ">SPAN 6</span>
+
+        <br>
+        <br>
+        <br>
+        <!--Still appears on a new line-->
+        <div class="border" style="height: 30px;width: 50px;">
+            Some text
+        </div>
+
+        <div class="border" style="height: 30px;width: 50px;">
+                Some notes
+        </div>
+</body>
+</html>
