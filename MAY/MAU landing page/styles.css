@@ -1,0 +1,170 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+ul{
+    list-style: none;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+.flex {
+    display: flex;
+    flex-direction: row; 
+}
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+.flex-1{
+    flex: 1;
+}
+a{
+    text-decoration: none;
+}
+.bg-white{
+    background-color: white;
+}
+.shadow {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+.bg-brown{
+    background-color: rgb(208, 115, 72);
+}
+.brown{
+    color: rgb(208, 115, 72);
+}
+
+.w-full{
+    width: 100%;
+}
+.w-80{
+    width: 80%;
+}
+.w-20{
+    width:20%;
+}
+
+.dark{
+    color: black;
+}
+.bg-dark-brown{
+    background-color: rgb(82, 16, 7);
+    color: white;
+}
+.yellow{
+    background-color: rgb(252, 252, 57);
+    color: black;
+}
+.white{
+    color: white;
+}
+.evenly{
+    justify-content: space-evenly;
+}
+.between{
+    justify-content: space-between;
+
+}
+.h-full{
+    height: 100%;
+}
+.p-y{
+    padding: 0.8rem 0;
+}
+.px{
+    padding: 0 0.8rem;
+}
+.pr{
+    padding-right:1.2rem; 
+}
+#welcome{
+    background-image: url("./hospital.jpg");
+    background-size: cover;
+}
+.center{
+    text-align: center;
+}
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+.grid2x2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: repeat(2, 1fr);
+    gap: 5px;
+}
+
+.full{
+    height: 99vh;
+    width: 100vw;
+}
+
+.slider-container {
+    position: relative;
+    /*width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    height: 400px;*/
+    overflow: hidden;
+}
+
+.list{
+    background-color: rgb(235, 190, 131);
+}
+.list>li{
+    border-bottom: 1px solid brown;
+    padding: 5px;
+}
+.list>a{
+    background-color: black;
+}
+.quick{
+    padding: 1.5rem 1.8rem;
+    font-size: x-large;
+
+}
+.slider {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    animation: slide 12s infinite;
+}
+
+.slide {
+    min-width: 100%;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide-content {
+    position: absolute;
+    bottom: 20%;
+    left: 5%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+    width: 100%;
+    height: 100%;
+}
+
+.slide-content h2 {
+    margin-top: 0;
+    font-size: 2em;
+}
+
+@keyframes slide {
+    0%, 20% { transform: translateX(0); }
+    25%, 45% { transform: translateX(-100%); }
+    50%, 70% { transform: translateX(-200%); }
+    75%, 95% { transform: translateX(-300%); }
+    100% { transform: translateX(-400%); }
+}
