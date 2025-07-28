@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        :root {
+            --blue: #1e90ff;
+            --white: #ffffff;
+        }
+        .one{
+            background-color: red;
+            color: var(--white);
+        }
+        .two{
+            background-color: rgb(0, 255, 0);
+            color: var(--blue);
+            /* integer value, ranges between 0 and 255. */
+            
+        }
+        .three{
+            --ls: #1b0f30;
+            background-color: hsl(240, 50%, 50%);
+            color: var(--ls);
+            /* 
+            Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue.
+
+            Saturation is a percentage value. 0% means a shade of gray, and 100% is the full color.
+
+            Lightness is also a percentage value. 0% is black, and 100% is white.
+
+            */
+        }
+        .four{
+            background-color:#ff00ff;
+            /*
+                #RRGGBB, where the RR (red), GG (green) and BB (blue) hexadecimal integers
+            */
+        }
+        h1{
+            height: 50px;
+            padding: 15px 40%;
+        }
+        .text-color1{
+            color: #0f0;
+        }
+        .text-color2{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="one">Box 1</h1>
+    <h1 class="two">Box 2</h1>
+    <h1 class="three">Box 3</h1>
+    <h1 class="four"> Box 4</h1>
+    <br>
+    <br>
+    <p class="text-color1">Some text an about to color</p>
+    <p class="text-color2">Another text i will color</p>
+</body>
+</html>
