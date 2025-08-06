@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript operators</h1>
+    <script>
+
+        /*
+        Data types can be primitive and non-primitive
+        ~primitive store the value, immutable, single value e.g 2, 'c', true
+        ~non-primitive complex(programmer created) stores reference, mutable, multiple values e.g [10,20,40], {1 :'moses'}, func and date
+
+        1. BigInt 
+        2. Number
+        3. Boolean
+        4. String
+        5. undefined
+        6. Null
+        7. Object
+        8. Symbol
+        -Use the `typeof` operator to get the data type.
+        -Optional use of `;` to mark end of statement.
+        -`var` keyword for declaring all kinds of data types
+        */
+        var name = "Moses";     //strings
+        var x = 100;            //number
+        var listOfNumbers = [20,1,4,8,5];   // Arrays are objects
+        var isMonday = true;
+
+        document.writeln(name+": "+ typeof name,"<br>");
+        document.writeln(x+": "+ typeof x, "<br>");
+        document.writeln(listOfNumbers+": "+ typeof listOfNumbers, "<br>");
+        document.writeln(isMonday+": "+ typeof isMonday, "<br>");
+        
+        var scientificNumber = 123e-5;
+        var binNumber = BigInt("2473683568335") // return 2473683568335n and typeof = bigint
+
+        /*outputs
+        window.alert()
+        console.log()
+        document.write()
+        */
+
+        
+
+    </script>
+</body>
+</html>
